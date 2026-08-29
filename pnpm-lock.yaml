@@ -20,12 +20,6 @@ importers:
       astro-icon:
         specifier: ^1.2.0
         version: 1.2.0
-      bootstrap:
-        specifier: 3.4.1
-        version: 3.4.1
-      jquery:
-        specifier: 2.1.1
-        version: 2.1.1
       sass:
         specifier: ^1.103.1
         version: 1.103.1
@@ -831,11 +825,6 @@ packages:
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
 
-  bootstrap@3.4.1:
-    resolution: {integrity: sha512-yN5oZVmRCwe5aKwzRj6736nSmKDX7pLYwsXiCj/EYmo16hODaBiT4En5btW/jhBF/seV+XMx3aYwukYC3A49DA==}
-    engines: {node: '>=6'}
-    deprecated: This version of Bootstrap is no longer supported. Please upgrade to the latest version.
-
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
 
@@ -1047,10 +1036,6 @@ packages:
   is-plain-obj@4.1.0:
     resolution: {integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==}
     engines: {node: '>=12'}
-
-  jquery@2.1.1:
-    resolution: {integrity: sha512-y+iOyLV9My82vtN1cc96DLlklSv15h5Jjug52TK+vXmgtN/dE89WvmP1W/g7lL+RWFzdsTmBwJgX/yf4RY9mPA==}
-    deprecated: This version is deprecated. Please upgrade to the latest version or find support at https://www.herodevs.com/support/jquery-nes.
 
   js-yaml@4.3.2:
     resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
@@ -2232,8 +2217,6 @@ snapshots:
 
   boolbase@1.0.0: {}
 
-  bootstrap@3.4.1: {}
-
   ccount@2.0.1: {}
 
   character-entities-html4@2.1.0: {}
@@ -2449,8 +2432,6 @@ snapshots:
     optional: true
 
   is-plain-obj@4.1.0: {}
-
-  jquery@2.1.1: {}
 
   js-yaml@4.3.2:
     dependencies:

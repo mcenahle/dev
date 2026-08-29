@@ -16,8 +16,6 @@
     "@iconify-json/skill-icons": "^1.2.4",
     "astro": "^7.2.9",
     "astro-icon": "^1.2.0",
-    "bootstrap": "3.4.1",
-    "jquery": "2.1.1",
     "sass": "^1.103.1"
   },
   "allowScripts": {

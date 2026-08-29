@@ -13,6 +13,17 @@ import { ClientRouter } from "astro:transitions";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
+    ></script>
+
     <title>mcenahle.dev</title>
     <ClientRouter />
   </head>
@@ -22,13 +33,5 @@ import { ClientRouter } from "astro:transitions";
       <slot />
     </div>
     <Footer />
-    <script>
-      import $ from "jquery";
-
-      window.$ = $;
-      window.jQuery = $;
-
-      await import("bootstrap/dist/js/bootstrap.min.js");
-    </script>
   </body>
 </html>
