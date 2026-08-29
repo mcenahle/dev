@@ -1,0 +1,200 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout>
+  <h2><code>.mcenahle.dev</code> 网站生态</h2>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr style="background: #2b5bae; color: white;">
+        <th>网站名</th>
+        <th>GitHub 仓库</th>
+        <th>详情</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>mcenahle.dev</td>
+        <td
+          ><a href="https://mcenahle.dev/gh/dev/" target="_blank"
+            ><Icon name="mdi:github" /> <u>访问</u></a
+          ></td
+        >
+        <td>
+          <a
+            href="#"
+            data-toggle="modal"
+            data-target="#main-dev-Modal"
+            style="cursor: pointer;"><u>详情</u></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>game.mcenahle.dev</td>
+        <td
+          ><a href="https://mcenahle.dev/gh/game-dev-site/" target="_blank"
+            ><Icon name="mdi:github" /> <u>访问</u></a
+          ></td
+        >
+        <td>
+          <a
+            href="#"
+            data-toggle="modal"
+            data-target="#game-dev-Modal"
+            style="cursor: pointer;"><u>详情</u></a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>blog.mcenahle.dev</td>
+        <td
+          ><a
+            href="https://mcenahle.dev/gh/mcenahle-blog-template/"
+            target="_blank"><Icon name="mdi:github" /> <u>访问</u></a
+          ></td
+        >
+        <td>
+          <a
+            href="#"
+            data-toggle="modal"
+            data-target="#blog-dev-Modal"
+            style="cursor: pointer;"><u>详情</u></a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    2026年8月29日，开通 <code>https://mcenahle.dev/gh/repo/path/</code> 的短链接。访问
+    <code>https://mcenahle.dev/gh/repo/path/</code> 可被重定向到 <code
+      >https://github.com/mcenahle/repo/path/</code
+    >。
+  </p>
+</Layout>
+
+<div
+  class="modal fade"
+  id="main-dev-Modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="main-dev-ModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true">&times;</button
+        >
+        <h4 class="modal-title" id="main-dev-ModalLabel">mcenahle.dev 开发</h4>
+      </div>
+      <div class="modal-body dev-ecosystem">
+        <p>
+          该网站的开发自从购买 <code>mcenahle.dev</code> 就已经开始，在购买之后及之后几日，基本使用
+          Astro 完成了开发，后被逐渐废弃，随后于2026年8月29日中午及下午完成了降级改版。改版后访问速度大幅提升，重回经典风格。
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="https://mcenahle.dev"
+          target="_blank"
+          class="btn btn-primary"
+          role="button">返回主页</a
+        >
+        <button type="button" class="btn btn-default" data-dismiss="modal"
+          >关闭</button
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="game-dev-Modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="game-dev-ModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true">&times;</button
+        >
+        <h4 class="modal-title" id="game-dev-ModalLabel">
+          game.mcenahle.dev 开发
+        </h4>
+      </div>
+      <div class="modal-body dev-ecosystem">
+        <p>
+          在接触 DDLC
+          游戏，并被“第四面墙”、“Sayo-nara”吓到后，准备自己开发一个自己的 Ren'py
+          游戏。目前该游戏项目被教资暂时搁置。
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="https://game.mcenahle.dev"
+          target="_blank"
+          class="btn btn-primary"
+          role="button">访问 <Icon name="mdi:open-in-new" /></a
+        >
+        <button type="button" class="btn btn-default" data-dismiss="modal"
+          >关闭</button
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="blog-dev-Modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="blog-dev-ModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true">&times;</button
+        >
+        <h4 class="modal-title" id="blog-dev-ModalLabel">
+          blog.mcenahle.dev 开发
+        </h4>
+      </div>
+      <div class="modal-body dev-ecosystem">
+        <p>
+          为了让个人博客网站具备个人性质，使用 Astro + Bootstrap 3
+          搭建了一个个人博客 demo 网站。该网站目前已经陆续继承了众多使用功能。
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href="https://blog.mcenahle.dev"
+          target="_blank"
+          class="btn btn-primary"
+          role="button">访问 <Icon name="mdi:open-in-new" /></a
+        >
+        <button type="button" class="btn btn-default" data-dismiss="modal"
+          >关闭</button
+        >
+      </div>
+    </div>
+  </div>
+</div>
