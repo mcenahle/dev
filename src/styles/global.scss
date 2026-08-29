@@ -41,6 +41,30 @@ footer {
   line-height: 1.6em;
 }
 
+.dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #337ab7;
+}
+
+.dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #337ab7;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #337ab7;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #337ab7;
+    color: white;
+  }
+}
+
 a {
   text-decoration: none;
   &:hover,
