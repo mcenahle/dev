@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout>
+  <h2>404 - Not Found</h2>
+
+  <p>该页面不存在。你可以尝试以下方法：</p>
+
+  <ol>
+    <li>
+      检查 URL 是否拼写正确，例：你应该拼写的是 <code style="color:blue"
+        ><iconify-icon icon="mdi:check"></iconify-icon> https://mcenahle.dev/projects/blend<b
+          >e</b
+        >r</code
+      >，而非 <code style="color:red"
+        ><iconify-icon icon="mdi:remove"></iconify-icon> https://mcenahle.dev/projects/blend<b
+          >o</b
+        >r</code
+      >。
+    </li>
+
+    <li>
+      该页面可能已被移动或删除。如果你感兴趣，也可以查看 <a
+        href="https://mn.edu.kg/gh/main-dev/commits"
+        target="_blank"
+      >
+        <Icon name="mdi:github" />&nbsp;
+        <u>本网站的提交历史记录</u>&nbsp;
+        <Icon name="mdi:external-link" />
+      </a>，以了解相关变更。
+    </li>
+  </ol>
+</Layout>
