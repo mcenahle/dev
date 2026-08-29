@@ -6,7 +6,61 @@ import { Icon } from "astro-icon/components";
 <Layout>
   <h2>mcenahle.dev</h2>
   <p>从 2023 年 9 月以来，持续建设网站。</p>
-  <p>这是我的开发（developer）旅程。</p>
+  <p>
+    这是我的开发（developer）旅程。<a
+      href="#"
+      data-toggle="modal"
+      data-target="#major-differ-Modal"
+      ><u>你不是学广告艺术设计专业的吗？怎么喜欢玩代码了？</u></a
+    >
+  </p>
+
+  <div
+    class="modal fade"
+    id="major-differ-Modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="major-differ-ModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-hidden="true">&times;</button
+          >
+          <h4 class="modal-title" id="major-differ-ModalLabel">
+            你不是学广告艺术设计专业的吗？怎么喜欢玩代码了？
+          </h4>
+        </div>
+        <div class="modal-body articles">
+          <p>......</p>
+          <p>
+            至于我为什么喜欢代码、喜欢计算机了呢？我觉得，可能是文科看多了，需要理科助助兴。广告策划案我真的让AI搞搞就行了，至于我的代码生活，目前我也很少使用AI生成代码。我觉得自己的项目，尤其是自己兴趣爱好的项目，还得自己来。AI只是辅助而已，真正的还得自己来。
+          </p>
+          <p>
+            ......今天mcenahle.dev改版了，新的故事随着我创建仓库而开始。之后她会怎么样？我把她带到了这个世界上，我们一起走。
+          </p>
+          <p style="text-align: right; font-size: 0.9em; color: #666;">
+            （原文在博客网站，于2026年8月29日发布）
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="https://blog.mcenahle.page/2026/08/24/468/"
+            class="btn btn-primary"
+            role="button">阅读原文 <Icon name="mdi:open-in-new" /></a
+          >
+          <button type="button" class="btn btn-default" data-dismiss="modal"
+            >关闭</button
+          >
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+  </div>
 
   <div class="panel panel-primary">
     <div class="panel-heading">
