@@ -1,11 +1,118 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout>
-	<Welcome />
+  <h2>mcenahle.dev</h2>
+  <p>从 2023 年 9 月以来，持续建设网站。</p>
+  <p>这是我的开发（developer）旅程。</p>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">我是谁？</h3>
+    </div>
+    <div class="panel-body">
+      <p>我是 mcenahle，喜欢代码生活，更喜欢开源软件，例如 Blender。</p>
+      <p>
+        我的电脑上的 vscode 发出的提交都会附带 SSH Key。你可 <a
+          href="/signature/"
+          ><u>在此</u>&nbsp;<sup>EN</sup>
+          <Icon name="mdi:arrow-top-right" /></a
+        > 查看。
+      </p>
+    </div>
+  </div>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">我会什么开发技能？</h3>
+    </div>
+    <div class="panel-body">
+      <ol>
+        <li>
+          建模和设计：<Icon name="skill-icons:blender-light" /> Blender <a
+            href="/projects/blender/"
+            ><u>建模作品展示</u> <Icon name="mdi:arrow-top-right" /></a
+          >
+          <Icon name="skill-icons:photoshop" /> Photoshop <Icon
+            name="skill-icons:illustrator"
+          /> Illustrator <a href="/projects/illustrator/"
+            ><u>矢量图作品展示</u> <Icon name="mdi:arrow-top-right" /></a
+          >
+          <Icon name="skill-icons:premiere" /> Premiere Pro <Icon
+            name="skill-icons:aftereffects"
+          /> After Effects
+        </li>
+        <li>
+          代码：<Icon name="skill-icons:github-light" /> GitHub <Icon
+            name="skill-icons:html"
+          /> html <Icon name="skill-icons:css" /> css <Icon
+            name="skill-icons:javascript"
+          /> JavaScript <Icon name="skill-icons:python-light" /> Python <Icon
+            name="skill-icons:markdown-light"
+          /> markdown <Icon name="skill-icons:pnpm-light" /> pnpm
+        </li>
+        <li>
+          网站建设：<Icon name="skill-icons:cloudflare-light" /> Cloudflare
+        </li>
+        <li>
+          操作系统和软件：<Icon name="skill-icons:windows-light" /> Windows <Icon
+            name="skill-icons:vscode-light"
+          /> VS Code
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">我有哪些开发过程中的趣事？</h3>
+    </div>
+    <div class="panel-body">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                data-parent="#accordion"
+                data-target="#collapseOne"
+              >
+                购买 <code>mcenahle.dev</code> 前，我试图制定过达成购买时间的要求！
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>
+                当时我给自己定了一个挺有意思的购买 <code>.dev</code> 解锁条件——三个事件，完成两个就可以买。其中为：
+              </p><table class="table table-striped">
+                <thead><tr><th>事件</th><th>状态</th></tr></thead><tbody
+                  ><tr
+                    ><td
+                      >MC 生存里设计出（创造模式验证也算）村民全自动农作物农场</td
+                    ><td style="color:green"><Icon name="mdi:check" /> 完成</td
+                    ></tr
+                  ><tr
+                    ><td>7 月 20 日某项医疗事件结束</td><td style="color:purple"
+                      ><Icon name="mdi:timer-outline" /> 当时未完成</td
+                    ></tr
+                  ><tr
+                    ><td>完成一个 JavaScript 网页</td><td style="color:green"
+                      ><Icon name="mdi:check" /> 完成</td
+                    ></tr
+                  ></tbody
+                >
+              </table><p>
+                此 JavaScript 网页的链接为：<a href="/html/获得-dev-前最后一难/"
+                  ><u>链接</u>&nbsp;<Icon name="mdi:arrow-top-right" /></a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>
