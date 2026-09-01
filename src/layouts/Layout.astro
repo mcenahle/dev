@@ -24,6 +24,9 @@ import { ClientRouter } from "astro:transitions";
       src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"
     ></script>
 
+    <link rel="stylesheet" href="/highlightjs/styles/tokyo-night-dark.css" />
+    <script is:inline src="/highlightjs/highlight.min.js"></script>
+
     <title>mcenahle.dev</title>
     <ClientRouter />
   </head>
@@ -31,6 +34,9 @@ import { ClientRouter } from "astro:transitions";
     <Navbar />
     <div class="container">
       <slot />
+      <script>
+        hljs.highlightAll();
+      </script>
     </div>
     <Footer />
   </body>
