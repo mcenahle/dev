@@ -84,8 +84,19 @@ code {
   overflow-wrap: anywhere;
   background-color: transparent;
   font-size: 100%;
-  color: black;
   font-family: "JetBrainsMono-Regular";
+}
+
+pre {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+pre code.hljs {
+  padding: 16px;
+  line-height: 1.6;
+  border-radius: 4px;
 }
 
 .carousel {
