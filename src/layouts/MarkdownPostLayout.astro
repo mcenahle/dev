@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+const { frontmatter } = Astro.props;
+---
+
+<meta charset="utf-8" />
+<Layout>
+  <ul class="breadcrumb" style="margin-top: 16px; font-size: 14px;">
+    <li><a href="/">mcenahle.dev</a></li>
+    <li><a href="/posts/">开发博客</a></li>
+    <li class="active">{frontmatter.title}</li>
+  </ul>
+  <div class="panel panel-default">
+    <div class="page-heading" style="padding:15px">
+      <h2 style="text-align: center;">{frontmatter.title}</h2>
+      <h4 style="text-align: center;">
+        <Icon name="mdi:account-edit" /> 作者：{frontmatter.author}
+        <span style="margin-left: 16px;"
+          ><Icon name="mdi:calendar" /> 日期：{frontmatter.pubDate}</span
+        >
+      </h4>
+    </div>
+    <div class="panel-body">
+      <div class="article">
+        <slot />
+      </div>
+      <hr style="margin-top: 24px;" />
+      <a class="btn btn-primary" href="/" role="button"
+        ><Icon name="mdi:arrow-left" /> 返回</a
+      >
+      <button id="ask-gpt" class="btn btn-default" style="margin-left: 12px;">
+        <Icon name="mdi:account-voice" /> 询问 ChatGPT
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector("#ask-gpt")?.addEventListener("click", () => {
+      const pageUrl = window.location.href;
+      const prompt = `阅读 ${pageUrl}，然后回答这个问题：`;
+      const url = `https://chatgpt.com/?prompt=${encodeURIComponent(prompt)}`;
+
+      window.open(url, "_blank");
+    });
+  </script>
+</Layout>

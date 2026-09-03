@@ -1,0 +1,30 @@
+---
+import Layout from "../../layouts/Layout.astro";
+const allPosts = Object.values(
+  import.meta.glob("./*.md", { eager: true }),
+).sort(
+  (a: any, b: any) =>
+    new Date(b.frontmatter.pubDate).getTime() -
+    new Date(a.frontmatter.pubDate).getTime(),
+);
+import { Icon } from "astro-icon/components";
+---
+
+<Layout>
+  <h2>开发博客</h2>
+  {
+    allPosts.map((post: any) => (
+      <div class="list-group">
+        <a href="" class="list-group-item active">
+          <h4 class="list-group-item-heading">mcenahle.dev 开发博客</h4>
+        </a>
+        <a href={post.url} class="list-group-item">
+          <h4 class="list-group-item-heading">
+            <u>{post.frontmatter.title}</u> <Icon name="mdi:arrow-top-right" />
+          </h4>
+          <p class="list-group-item-text">{post.frontmatter.description}</p>
+        </a>
+      </div>
+    ))
+  }
+</Layout>
