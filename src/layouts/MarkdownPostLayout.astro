@@ -12,14 +12,24 @@ const { frontmatter } = Astro.props;
     <li class="active">{frontmatter.title}</li>
   </ul>
   <div class="panel panel-default">
-    <div class="page-heading" style="padding:15px">
-      <h2 style="text-align: center;">{frontmatter.title}</h2>
-      <h4 style="text-align: center;">
-        <Icon name="mdi:account-edit" /> 作者：{frontmatter.author}
-        <span style="margin-left: 16px;"
-          ><Icon name="mdi:calendar" /> 日期：{frontmatter.pubDate}</span
-        >
-      </h4>
+    <div class="page-heading">
+      <h2>{frontmatter.title}</h2>
+
+      <div class="title-divider">
+        <span></span>
+      </div>
+
+      <div class="post-meta">
+        <span>
+          <Icon name="mdi:account-edit" />
+          {frontmatter.author}
+        </span>
+
+        <span>
+          <Icon name="mdi:calendar" />
+          {frontmatter.pubDate}
+        </span>
+      </div>
     </div>
     <div class="panel-body">
       <div class="article">
