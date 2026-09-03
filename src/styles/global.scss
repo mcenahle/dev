@@ -141,23 +141,9 @@ pre code.hljs {
   line-height: 1.6em;
 }
 
-// body {
-//   cursor:
-//     url("/cursors/default-32.png") 10 14,
-//     auto;
-// }
-
-// a,
-// .btn,
-// button {
-//   cursor:
-//     url("/cursors/hand-32.png") 10 14,
-//     pointer;
-// }
-
 body {
   cursor:
-    url("/cursors/default-48.png") 12 16,
+    url("/cursors/default-32.png") 10 14,
     auto;
 }
 
@@ -165,9 +151,23 @@ a,
 .btn,
 button {
   cursor:
-    url("/cursors/hand-48.png") 12 16,
+    url("/cursors/hand-32.png") 10 14,
     pointer;
 }
+
+// body {
+//   cursor:
+//     url("/cursors/default-48.png") 12 16,
+//     auto;
+// }
+
+// a,
+// .btn,
+// button {
+//   cursor:
+//     url("/cursors/hand-48.png") 12 16,
+//     pointer;
+// }
 
 // .btn.disabled,
 // .btn:disabled,
