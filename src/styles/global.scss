@@ -125,6 +125,26 @@ pre code.hljs {
   place-items: center;
 }
 
+.pills {
+  font-size: 14px;
+  background-color: #f5f5f5b0;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.nav-pills > li > a {
+  border-radius: 0px;
+  width: 120px;
+  text-align: center;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: #0251a2;
+}
+
 #footer-text {
   margin-bottom: 10px;
   margin-left: 10px;

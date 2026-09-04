@@ -1,0 +1,63 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="pills" style="margin-top: 30px;">
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#tab-1">开发者社区</a></li>
+    <li><a data-toggle="tab" href="#tab-2">友情链接</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="tab-1" class="tab-pane fade in active">
+      <h3>开发者社区</h3>
+      <div class="row" style="font-size: 16px;">
+        <div class="col-sm-3 col-md-3">
+          <a href="https://github.com" target="_blank"
+            ><u>GitHub</u> <Icon name="mdi:open-in-new" /></a
+          >
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <a href="https://developer.mozilla.org" target="_blank"
+            ><u>mozilla 开发者</u> <Icon name="mdi:open-in-new" /></a
+          >
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <a href="https://developer.apple.com" target="_blank"
+            ><u>apple 开发者</u> <Icon name="mdi:open-in-new" /></a
+          >
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <a href="https://linux.do" target="_blank" rel="noreferrer"
+            ><u>Linux.do</u> <Icon name="mdi:open-in-new" /></a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="tab-2" class="tab-pane fade">
+      <h3>友情链接</h3>
+      <div class="row" style="font-size: 16px;">
+        <div class="col-sm-3 col-md-3">
+          <a href="https://wsjkw.sh.gov.cn" target="_blank" rel="noreferrer"
+            ><u>上海市卫生健康委员会</u> <Icon name="mdi:open-in-new" /></a
+          >
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <a href="https://mcenahle.care" target="_blank"
+            ><u>mcenahle.care</u> <Icon name="mdi:open-in-new" /></a
+          >
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <a href="https://charity.mcenahle.page" target="_blank"
+            ><u>mcenahle 公益记录</u> <Icon name="mdi:open-in-new" /></a
+          >
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <a href="https://cloudflare.com" target="_blank"
+            ><u>Cloudflare</u> <Icon name="mdi:open-in-new" /></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
