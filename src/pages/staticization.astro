@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout>
+  <h2>静态化</h2>
+  <div class="article">
+    <p>
+      网站静态化应该是从2026年4月4日14:36，随着 <a
+        href="https://github.com/mcenahle/hope-vuepress"
+        target="_blank"
+        ><u>mcenahle/hope-vuepress</u> <Icon name="mdi:open-in-new" /></a
+      > 的 <a
+        href="https://github.com/mcenahle/hope-vuepress/commit/fb762c153d90f727b6140930dfeec7f87ba92fda"
+        target="_blank"><u>第一个 commit</u> <Icon name="mdi:open-in-new" /></a
+      > 而开始的。目前，静态化的思路已经基本成型，我也基本能在2个小时内完成一个网站的初始化/重构为静态网站的工作。
+    </p>
+
+    <p>
+      随着网站静态化，我也启用了 <a href="/signature/" target="_blank"
+        ><u>SSH Key</u> <Icon name="mdi:arrow-top-right" /></a
+      >，致力于证明每一次提交都是来源于我的电脑的 VS Code。
+    </p>
+
+    <p>
+      截止目前，现行主要网站基本都为静态网站，包括个人博客网站，以及个人主页网站。本网站也是静态化行动的一部分。本人目前主要使用的是&nbsp;
+      <a href="https://astro.build" target="_blank"
+        ><u>astro</u> <Icon name="mdi:open-in-new" /></a
+      >，个人认为，该方案的组件化思想极大的还原了之前 php 时代的 <code
+        >&lt;?php require &quot;header.php&quot; ?&gt;</code
+      >，实现“无痛”代码复用。
+    </p>
+  </div>
+</Layout>
