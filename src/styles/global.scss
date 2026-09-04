@@ -86,7 +86,7 @@ footer {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   transition: all 0.3s ease-in-out;
   &:hover,
   &:focus {
@@ -177,6 +177,10 @@ footer {
 }
 
 .article {
+  text-indent: 2em;
+}
+
+.posts {
   text-indent: 2em;
   a {
     text-decoration: underline;
