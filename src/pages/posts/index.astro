@@ -15,14 +15,22 @@ import { Icon } from "astro-icon/components";
   {
     allPosts.map((post: any) => (
       <div class="list-group">
-        <a href="" class="list-group-item active">
+        <a href="javascript:void(0)" class="list-group-item active">
           <h4 class="list-group-item-heading">mcenahle.dev 开发博客</h4>
         </a>
         <a href={post.url} class="list-group-item">
           <h4 class="list-group-item-heading">
             <u>{post.frontmatter.title}</u> <Icon name="mdi:arrow-top-right" />
           </h4>
-          <p class="list-group-item-text">{post.frontmatter.description}</p>
+          <p class="list-group-item-text" style="font-size: 14px;">
+            <Icon name="mdi:account-edit" /> {post.frontmatter.author}
+            <span style="margin-left: 8px;">
+              <Icon name="mdi:calendar" /> {post.frontmatter.pubDate}
+            </span>
+          </p>
+          <p class="list-group-item-text" style="font-size: 13px;">
+            {post.frontmatter.description}
+          </p>
         </a>
       </div>
     ))
