@@ -35,17 +35,43 @@ import { Icon } from "astro-icon/components";
             <Icon name="mdi:design" /> 作品展示 <b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="/projects/blender/">建模作品展示</a></li>
-            <li><a href="/projects/illustrator/">矢量图作品展示</a></li>
+            <li>
+              <a href="/projects/blender/"
+                ><Icon name="mdi:blender-software" /> 建模作品展示</a
+              >
+            </li>
+            <li>
+              <a href="/projects/illustrator/"
+                ><Icon name="mdi:palette" /> 矢量图作品展示</a
+              >
+            </li>
           </ul>
         </li>
-        <li>
-          <a href="/posts/"
-            ><Icon name="mdi:post-it-note-check-outline" /> 开发博客</a
+        <li class="dropdown">
+          <a
+            href="javascript:void(0)"
+            class="dropdown-toggle"
+            data-toggle="dropdown"
           >
-        </li>
-        <li>
-          <a href="/ecosystem/"><Icon name="mdi:web-check" /> 个人网站生态</a>
+            <Icon name="mdi:head-thinking" /> 网站建设 <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="/staticization/"
+                ><Icon name="mdi:language-html5" /> 静态化</a
+              >
+            </li>
+            <li>
+              <a href="/posts/"
+                ><Icon name="mdi:post-it-note-check-outline" /> 开发博客</a
+              >
+            </li>
+            <li>
+              <a href="/ecosystem/"
+                ><Icon name="mdi:web-check" /> 个人网站生态</a
+              >
+            </li>
+          </ul>
         </li>
         <li>
           <a href="/signature/"><Icon name="mdi:key-chain-variant" /> SSH Key</a
