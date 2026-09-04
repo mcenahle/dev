@@ -86,7 +86,7 @@ footer {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all 0.3s ease-in-out;
   &:hover,
   &:focus {
