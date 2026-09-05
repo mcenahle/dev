@@ -39,24 +39,11 @@ const { frontmatter } = Astro.props;
       <a class="btn btn-primary" href="/" role="button"
         ><Icon name="mdi:arrow-left" /> 返回</a
       >
-      <button
-        id="ask-gpt"
-        class="btn btn-default"
-        data-toggle="tooltip"
-        data-placement="top"
-        title="将在 ChatGPT 中打开此文章"
-        style="margin-left: 12px;"
-      >
+      <button id="ask-gpt" class="btn btn-default" style="margin-left: 12px;">
         <Icon name="bi:openai" /> 询问 ChatGPT
       </button>
     </div>
   </div>
-
-  <script>
-    $(function () {
-      $("[data-toggle='tooltip']").tooltip();
-    });
-  </script>
 
   <script>
     document.querySelector("#ask-gpt")?.addEventListener("click", () => {
