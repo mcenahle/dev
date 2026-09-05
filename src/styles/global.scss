@@ -185,6 +185,10 @@ footer {
   a {
     text-decoration: underline;
   }
+  ul,
+  ol {
+    text-indent: 0em;
+  }
 }
 
 .external-link::after {

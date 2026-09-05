@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+const { frontmatter } = Astro.props;
+---
+
+<meta charset="utf-8" />
+<Layout>
+  <ul class="breadcrumb" style="margin-top: 16px; font-size: 14px;">
+    <li><a href="/">mcenahle.dev</a></li>
+    <li><a href="/site-affairs-documents/">站务文件</a></li>
+    <li class="active">{frontmatter.title}</li>
+  </ul>
+  <div class="panel panel-default">
+    <div class="page-heading">
+      <h2>{frontmatter.title}</h2>
+
+      <div class="title-divider">
+        <span></span>
+      </div>
+
+      <div class="post-meta">
+        <span>
+          <Icon name="mdi:account-edit" />
+          {frontmatter.author}
+        </span>
+
+        <span>
+          <Icon name="mdi:calendar" />
+          {frontmatter.pubDate}
+        </span>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="posts">
+        <slot />
+      </div>
+      <hr style="margin-top: 24px;" />
+      <a class="btn btn-primary" href="/" role="button"
+        ><Icon name="mdi:arrow-left" /> 返回</a
+      >
+      <button
+        class="btn btn-info"
+        data-toggle="modal"
+        data-target="#statusModal"
+        style="margin-left: 12px;"
+        ><Icon name="mdi:timer-outline" /> 查看目前执行状态</button
+      >
+      <button id="ask-gpt" class="btn btn-link" style="margin-left: 12px;">
+        <Icon name="bi:openai" /> 询问 ChatGPT
+      </button>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="statusModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="statusModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-hidden="true">&times;</button
+          >
+          <h4 class="modal-title" id="statusModalLabel">
+            {frontmatter.title} - {frontmatter.no} 目前执行状态
+          </h4>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-info">
+            <p><b>{frontmatter.statusTop}</b></p>
+            <p>{frontmatter.statusInfo}</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"
+            >关闭</button
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector("#ask-gpt")?.addEventListener("click", () => {
+      const pageUrl = window.location.href;
+      const prompt = `阅读 ${pageUrl}，然后回答这个问题：`;
+      const url = `https://chatgpt.com/?prompt=${encodeURIComponent(prompt)}`;
+
+      window.open(url, "_blank");
+    });
+  </script>
+</Layout>
