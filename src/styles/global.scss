@@ -1,3 +1,5 @@
+@import url("/fonts/仿宋_GB2312/result.css");
+
 html,
 body {
   height: 100%;
@@ -16,7 +18,7 @@ body {
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url("/fonts/InterVariable.woff2") format("woff2");
+  src: url("/fonts/InterVariable/InterVariable.woff2") format("woff2");
 }
 
 @font-face {
@@ -24,7 +26,7 @@ body {
   font-style: italic;
   font-weight: 100 900;
   font-display: swap;
-  src: url("/fonts/InterVariable-Italic.woff2") format("woff2");
+  src: url("/fonts/InterVariable/InterVariable-Italic.woff2") format("woff2");
 }
 
 body::before {
@@ -186,7 +188,8 @@ footer {
     text-decoration: underline;
   }
   ul,
-  ol {
+  ol,
+  h3 {
     text-indent: 0em;
   }
 }
@@ -232,7 +235,8 @@ footer {
   line-height: 1.35;
 }
 
-.title-divider {
+.title-divider,
+.affairs-docs-title-divider {
   display: flex;
   justify-content: center;
   margin: 16px 0 14px;
@@ -246,6 +250,17 @@ footer {
     90deg,
     rgba(120, 180, 255, 0.9),
     rgba(220, 150, 220, 0.9)
+  );
+}
+
+.affairs-docs-title-divider span {
+  width: 120px;
+  height: 3px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(204, 166, 61, 0.9),
+    rgba(168, 156, 21, 0.9)
   );
 }
 

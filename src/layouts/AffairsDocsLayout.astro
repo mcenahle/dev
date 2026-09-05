@@ -14,8 +14,9 @@ const { frontmatter } = Astro.props;
   <div class="panel panel-default">
     <div class="page-heading">
       <h2>{frontmatter.title}</h2>
+      <h4><Icon name="mdi:format-list-numbered" /> {frontmatter.no}</h4>
 
-      <div class="title-divider">
+      <div class="affairs-docs-title-divider">
         <span></span>
       </div>
 
@@ -32,7 +33,7 @@ const { frontmatter } = Astro.props;
       </div>
     </div>
     <div class="panel-body">
-      <div class="posts">
+      <div class="posts" style="font-family:'FangSong_GB2312';">
         <slot />
       </div>
       <hr style="margin-top: 24px;" />

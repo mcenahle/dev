@@ -14,23 +14,35 @@ import { Icon } from "astro-icon/components";
   <h2>站务文件</h2>
 
   <div class="list-group">
-    <a href="javascript:void(0)" class="list-group-item active">
+    <a
+      href="javascript:void(0)"
+      class="list-group-item active"
+      style="background: linear-gradient(to right, #a17c0d, #c29116); border-color:#a9821f;"
+    >
       <h4 class="list-group-item-heading">mcenahle 站务文件</h4>
     </a>
     {
       allPosts.map((post: any) => (
-        <a href={post.url} class="list-group-item">
+        <a
+          href={post.url}
+          class="list-group-item"
+          style="font-family:'FangSong_GB2312';"
+        >
           <h4 class="list-group-item-heading">
             <u>{post.frontmatter.title}</u> <Icon name="mdi:arrow-top-right" />
           </h4>
           <p class="list-group-item-text" style="font-size: 14px;">
-            <Icon name="mdi:account-edit" /> {post.frontmatter.author}
+            <Icon name="mdi:format-list-numbered" /> {post.frontmatter.no}
+            <span style="margin-left: 8px;">
+              <Icon name="mdi:account-edit" /> {post.frontmatter.author}
+            </span>
             <span style="margin-left: 8px;">
               <Icon name="mdi:calendar" /> {post.frontmatter.pubDate}
             </span>
           </p>
           <p class="list-group-item-text" style="font-size: 13px;">
-            {post.frontmatter.description}
+            {post.frontmatter.statusTop}
+            {post.frontmatter.statusInfo}
           </p>
         </a>
       ))
