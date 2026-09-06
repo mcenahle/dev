@@ -41,6 +41,19 @@ body::before {
   text-indent: 2em;
 }
 
+$usa-link-original: #3b6fb8;
+
+.usa-link {
+  color: $usa-link-original !important;
+  &:hover,
+  &:focus {
+    color: #193d71 !important;
+  }
+  &:visited {
+    color: $usa-link-original !important;
+  }
+}
+
 @font-face {
   font-family: "JetBrainsMono-Regular";
   src: url("https://www.mcenahle.org.cn/fonts/JetBrainsMono-Regular.woff2")
