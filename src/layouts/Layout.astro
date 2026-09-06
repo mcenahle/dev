@@ -1,23 +1,26 @@
+---
+import Banner from "../components/Banner.astro";
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://mcenahle.dev/favicon.svg"
+    />
+    <link rel="icon" href="https://mcenahle.dev/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>usdws.mcenahle.dev</title>
+    <link rel="stylesheet" href="/uswds/css/styles.css" />
   </head>
   <body>
+    <Banner />
     <slot />
   </body>
-</html>
 
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>
+  <script is:inline src="/uswds/js/uswds.min.js"></script>
+</html>
