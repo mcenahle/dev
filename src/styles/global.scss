@@ -1,0 +1,42 @@
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main,
+a {
+  flex: 1;
+  line-height: 1.55;
+}
+
+.usa-footer .grid-row.grid-gap {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.grid-container {
+  margin-bottom: 70px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("/images/background.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.2;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.article {
+  text-indent: 2em;
+}
