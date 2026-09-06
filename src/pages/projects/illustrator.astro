@@ -1,0 +1,89 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const works = [
+  {
+    image: "/images/illustrator/mcenahle.page.png",
+    title: "page 网站",
+    description: "page，纸张。",
+  },
+  {
+    image: "/images/illustrator/blog.mcenahle.page.png",
+    title: "博客网站",
+    description: "在之前的基础上，加入笔的矢量图。",
+  },
+  {
+    image: "/images/illustrator/portfolio.mcenahle.cn.png",
+    title: "作品集网页设计图",
+    description: "调色板为意象。",
+  },
+  {
+    image: "/images/illustrator/nurse.jpg",
+    title: "护士矢量插画",
+    description: "拔智齿手术前，临摹九院网站的护士插画。",
+  },
+  {
+    image: "/images/illustrator/syringe.jpg",
+    title: "注射器",
+    description: "经典款注射器，保证无痛！不会扎人，但看着有点像真的。",
+  },
+];
+---
+
+<Layout>
+  <h1>Illustrator 矢量图作品展示</h1>
+
+  <div class="article">
+    <p class="usa-intro">
+      Illustrator 学习过程中制作的一些练习作品与实验项目。
+    </p>
+
+    <div class="grid-row grid-gap">
+      {
+        works.map((work) => (
+          <div class="tablet:grid-col-6 margin-bottom-1">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h2 class="usa-card__heading">{work.title}</h2>
+                </div>
+
+                <div class="usa-card__media">
+                  <div class="usa-card__img">
+                    <img
+                      src={work.image}
+                      alt={`${work.title} Illustrator 矢量图作品展示`}
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <div class="usa-card__body">
+                  <p>{work.description}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <section class="margin-top-1">
+      <h2 style="text-indent: 0em;">关于这些作品</h2>
+
+      <p>
+        Illustrator
+        软件是学校带我们入门的一个设计类软件，其能带我们完成高质量的矢量插画。
+      </p>
+
+      <p>
+        由于 Adobe
+        近年来的产品策略和服务体验并不符合我的需求，目前我也在考虑采用 <a
+          href="https://inkscape.org"
+          target="_blank"
+          class="usa-link usa-link--external"><u>Inkscape</u></a
+        > 软件，以继续完成自己的创意思路。
+      </p>
+    </section>
+  </div>
+</Layout>
