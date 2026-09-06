@@ -1,0 +1,146 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+const { frontmatter } = Astro.props;
+---
+
+<meta charset="utf-8" />
+<Layout>
+  <nav
+    class="usa-breadcrumb"
+    aria-label="Breadcrumbs,,"
+    style="background-color: transparent;"
+  >
+    <ol class="usa-breadcrumb__list">
+      <li class="usa-breadcrumb__list-item">
+        <a href="/" class="usa-breadcrumb__link usa-link"><span>主页</span></a>
+      </li>
+      <li class="usa-breadcrumb__list-item">
+        <a href="/site-affairs-documents/" class="usa-breadcrumb__link usa-link"
+          ><span>站务文件</span></a
+        >
+      </li>
+      <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+        <span>{frontmatter.title}</span>
+      </li>
+    </ol>
+  </nav>
+  <h2 style="text-align: center; font-size: 30px;">{frontmatter.title}</h2>
+  <h4 style="text-align: center; font-size: 20px;">
+    <Icon name="mdi:format-list-numbered" />&nbsp;
+    {frontmatter.no}
+  </h4>
+
+  <div class="affairs-docs-title-divider">
+    <span></span>
+  </div>
+
+  <div class="post-meta">
+    <span>
+      <Icon name="mdi:account-edit" />
+      {frontmatter.author}
+    </span>
+
+    <span>
+      <Icon name="mdi:calendar" />
+      {frontmatter.pubDate}
+    </span>
+    <div
+      class="usa-prose posts"
+      style="font-family:'FangSong_GB2312'; text-indent: 2em; margin-top: 10px;"
+    >
+      <slot />
+    </div>
+  </div>
+  <hr style="margin-top: 24px;" />
+  <!-- <ul class="usa-button-group">
+    <li class="usa-button-group__item">
+      <a href="/" class="usa-button usa-button--outline"
+        ><Icon name="mdi:arrow-left" /> 返回首页</a
+      >
+    </li>
+    <li class="usa-button-group__item">
+      <a
+        class="usa-button"
+        href="#example-modal-1"
+        aria-controls="example-modal-1"
+        data-open-modal><Icon name="mdi:timer-outline" /> 查看目前执行状态</a
+      >
+    </li>
+    <li class="usa-button-group__item">
+      <button
+        id="ask-gpt"
+        type="button"
+        class="usa-button usa-button--accent-cool"
+        ><Icon name="bi:openai" /> 询问 ChatGPT</button
+      >
+    </li>
+  </ul> -->
+
+  <a href="/" class="usa-button usa-button--outline"
+    ><Icon name="mdi:arrow-left" /> 返回首页</a
+  >
+  <a
+    class="usa-button"
+    href="#example-modal-1"
+    aria-controls="example-modal-1"
+    data-open-modal><Icon name="mdi:timer-outline" /> 查看目前执行状态</a
+  >
+  <button id="ask-gpt" type="button" class="usa-button usa-button--accent-cool"
+    ><Icon name="bi:openai" /> 询问 ChatGPT</button
+  >
+
+  <div
+    class="usa-modal"
+    id="example-modal-1"
+    aria-labelledby="modal-1-heading"
+    aria-describedby="modal-1-description"
+  >
+    <div class="usa-modal__content">
+      <div class="usa-modal__main">
+        <h2 class="usa-modal__heading" id="modal-1-heading">
+          {frontmatter.title} - {frontmatter.no} 目前执行状态
+        </h2>
+        <div class="usa-prose">
+          <p id="modal-1-description">
+            <div class="usa-alert usa-alert--info usa-alert--slim">
+              <div class="usa-alert__body">
+                <p class="usa-alert__text"><b>{frontmatter.statusTop}</b></p>
+                <p class="usa-alert__text">{frontmatter.statusInfo}</p>
+              </div>
+            </div>
+          </p>
+        </div>
+        <div class="usa-modal__footer">
+          <ul class="usa-button-group">
+            <li class="usa-button-group__item">
+              <button type="button" class="usa-button" data-close-modal>
+                关闭
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="usa-button usa-modal__close"
+        aria-label="Close this window"
+        data-close-modal
+      >
+        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+          <use href="/uswds/img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector("#ask-gpt")?.addEventListener("click", () => {
+      const pageUrl = window.location.href;
+      const prompt = `阅读 ${pageUrl}，然后回答这个问题：`;
+      const url = `https://chatgpt.com/?prompt=${encodeURIComponent(prompt)}`;
+
+      window.open(url, "_blank");
+    });
+  </script>
+</Layout>

@@ -29,7 +29,7 @@ export default defineConfig({
           },
 
           properties: {
-            className: ["external-link"],
+            className: ["external-link", "usa-link"],
           },
         },
       ],
