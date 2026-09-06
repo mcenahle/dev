@@ -1,0 +1,101 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--extended">
+  <div class="usa-navbar">
+    <div class="usa-logo">
+      <em class="usa-logo__text"
+        ><a href="/" title="usdws.mcenahle.dev">usdws.mcenahle.dev</a></em
+      >
+    </div>
+    <button type="button" class="usa-menu-btn">菜单</button>
+  </div>
+  <nav aria-label="Primary navigation" class="usa-nav">
+    <div class="usa-nav__inner">
+      <button type="button" class="usa-nav__close">
+        <img src="/assets/img/usa-icons/close.svg" role="img" alt="Close" />
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="extended-nav-section-one"
+          >
+            <span><Icon name="mdi:design" /> 作品展示</span>
+          </button>
+          <ul id="extended-nav-section-one" class="usa-nav__submenu">
+            <li class="usa-nav__submenu-item">
+              <a href="/projects/blender/"
+                ><span><Icon name="mdi:blender-software" /> 建模作品展示</span
+                ></a
+              >
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="/projects/illustrator/"
+                ><span><Icon name="mdi:palette" /> 矢量图作品展示</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="usa-nav__primary-item">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="extended-nav-section-two"
+          >
+            <span><Icon name="mdi:code-tags-check" /> 网站建设</span>
+          </button>
+          <ul id="extended-nav-section-two" class="usa-nav__submenu">
+            <li class="usa-nav__submenu-item">
+              <a href="/staticization/"
+                ><span><Icon name="mdi:language-html5" /> 静态化</span>
+              </a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="/posts/"
+                ><span
+                  ><Icon name="mdi:post-it-note-check-outline" /> 开发博客</span
+                >
+              </a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="/site-affairs-documents/"
+                ><span><Icon name="mdi:bell-alert" /> 站务文件</span></a
+              >
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="/ecosystem/"
+                ><span><Icon name="mdi:web-check" /> 个人网站生态</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="/signature/" class="usa-nav-link"
+            ><span><Icon name="mdi:key-chain-variant" /> SSH Key</span></a
+          >
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="https://mail.mcenahle.dev" target="_blank"
+            ><span><Icon name="mdi:email" /> Webmail</span></a
+          >
+        </li>
+      </ul>
+      <div class="usa-nav__secondary">
+        <ul class="usa-nav__secondary-links">
+          <li class="usa-nav__secondary-item">
+            <a href="/my/"> 关于我 </a>
+          </li>
+          <li class="usa-nav__secondary-item">
+            <a href="/site-affairs-documents/2026-07/"> 网站域名精简化思想 </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
