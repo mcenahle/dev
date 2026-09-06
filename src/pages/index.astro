@@ -1,11 +1,187 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout>
-  <main class="grid-container">
-    <h1>USWDS Demo</h1>
+  <h1>mcenahle.dev</h1>
 
-    <button class="usa-button"> Hello USWDS </button>
-  </main>
+  <p>
+    从 2023 年 9 月以来，持续建设网站。这是我的开发（developer）旅程。
+    <a
+      href="#example-modal-1"
+      class="usa-button usa-button--unstyled"
+      aria-controls="example-modal-1"
+      style="line-height: 1.55;"
+      data-open-modal>你不是学广告艺术设计专业的吗？怎么喜欢玩代码了？</a
+    >
+  </p>
+
+  <p class="text-success">
+    欢迎参与我的所有的网站项目！如果你在我旗下的任何网站中发现错别字、失效链接、内容错误或代码问题，欢迎提交
+    Issue 或 Pull Request。小到一个标点、一个 typo
+    也没关系，我很乐意接受来自其他人的改进。<b
+      >Issues / Pull Requests are always welcome.</b
+    >
+  </p>
+
+  <div class="usa-alert usa-alert--info">
+    <div class="usa-alert__body">
+      <h4 class="usa-alert__heading">我是谁？</h4>
+      <p class="usa-alert__text">
+        我是 mcenahle，喜欢代码生活，更喜欢开源软件，例如 Blender。
+      </p>
+      <p class="usa-alert__text">
+        我的电脑上的 vscode 发出的提交都会附带 SSH Key。你可 <a
+          class="usa-link"
+          href="/signature/"
+          ><u>在此</u>&nbsp;<sup>EN</sup><Icon name="mdi:arrow-top-right" /></a
+        > 查看。
+      </p>
+    </div>
+  </div>
+
+  <div class="usa-alert usa-alert--success">
+    <div class="usa-alert__body">
+      <h4 class="usa-alert__heading">我会什么开发技能？</h4>
+      <ol class="usa-alert__text">
+        <li>
+          建模和设计：<Icon name="skill-icons:blender-light" /> Blender <a
+            href="/projects/blender/"
+            class="usa-link"
+            ><u>建模作品展示</u> <Icon name="mdi:arrow-top-right" /></a
+          >
+          <Icon name="skill-icons:photoshop" /> Photoshop <Icon
+            name="skill-icons:illustrator"
+          /> Illustrator <a href="/projects/illustrator/" class="usa-link"
+            ><u>矢量图作品展示</u> <Icon name="mdi:arrow-top-right" /></a
+          >
+          <Icon name="skill-icons:premiere" /> Premiere Pro <Icon
+            name="skill-icons:aftereffects"
+          /> After Effects
+        </li>
+        <li>
+          代码：<Icon name="skill-icons:github-light" /> GitHub <Icon
+            name="skill-icons:html"
+          /> html <Icon name="skill-icons:css" /> css <Icon
+            name="skill-icons:javascript"
+          /> JavaScript <Icon name="skill-icons:python-light" /> Python <Icon
+            name="skill-icons:markdown-light"
+          /> markdown <Icon name="skill-icons:pnpm-light" /> pnpm
+        </li>
+        <li>
+          网站建设：<Icon name="skill-icons:cloudflare-light" /> Cloudflare
+        </li>
+        <li>
+          操作系统和软件：<Icon name="skill-icons:windows-light" /> Windows <Icon
+            name="skill-icons:vscode-light"
+          /> VS Code
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="usa-accordion" style="margin-top: 1rem;">
+    <h4 class="usa-accordion__heading">
+      <button
+        type="button"
+        class="usa-accordion__button"
+        aria-expanded="false"
+        aria-controls="a1"
+      >
+        购买 mcenahle.dev 前，我试图制定过达成购买时间的要求！
+      </button>
+    </h4>
+
+    <div id="a1" class="usa-accordion__content usa-prose">
+      <p>
+        当时我给自己定了一个挺有意思的购买 <code>.dev</code> 解锁条件——三个事件，完成两个就可以买。其中为：
+      </p>
+
+      <table class="usa-table">
+        <thead>
+          <tr>
+            <th scope="col">事件</th>
+            <th scope="col">状态</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MC 生存里设计出（创造模式验证也算）村民全自动农作物农场</td>
+            <td style="color:green"><Icon name="mdi:check" /> 完成</td>
+          </tr>
+          <tr>
+            <td>7 月 20 日某项医疗事件结束</td>
+            <td style="color:purple"
+              ><Icon name="mdi:timer-outline" /> 当时未完成</td
+            >
+          </tr>
+          <tr>
+            <td>完成一个 JavaScript 网页</td>
+            <td style="color:green"><Icon name="mdi:check" /> 完成</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        此 JavaScript 网页的链接为：<a
+          href="/html/获得-dev-前最后一难/"
+          class="usa-link"
+          ><u>链接</u>&nbsp;<Icon name="mdi:arrow-top-right" /></a
+        >
+      </p>
+    </div>
+  </div>
 </Layout>
+
+<div
+  class="usa-modal usa-modal--lg"
+  id="example-modal-1"
+  aria-labelledby="modal-1-heading"
+  aria-describedby="modal-1-description"
+>
+  <div class="usa-modal__content">
+    <div class="usa-modal__main">
+      <h2 class="usa-modal__heading" id="modal-1-heading">
+        你不是学广告艺术设计专业的吗？怎么喜欢玩代码了？
+      </h2>
+      <div class="usa-prose">
+        <div class="article">
+          <p>......</p>
+          <p>
+            至于我为什么喜欢代码、喜欢计算机了呢？我觉得，可能是文科看多了，需要理科助助兴。广告策划案我真的让AI搞搞就行了，至于我的代码生活，目前我也很少使用AI生成代码。我觉得自己的项目，尤其是自己兴趣爱好的项目，还得自己来。AI只是辅助而已，真正的还得自己来。
+          </p>
+          <p>
+            ......今天mcenahle.dev改版了，新的故事随着我创建仓库而开始。之后她会怎么样？我把她带到了这个世界上，我们一起走。
+          </p>
+          <p style="text-align: right; font-size: 0.9em; color: #666;">
+            （原文在博客网站，于2026年8月29日发布）
+          </p>
+        </div>
+      </div>
+      <div class="usa-modal__footer">
+        <ul class="usa-button-group">
+          <li class="usa-button-group__item">
+            <button
+              type="button"
+              class="usa-button usa-button--unstyled padding-105 text-center"
+              data-close-modal
+            >
+              关闭
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="usa-button usa-modal__close"
+      aria-label="Close this window"
+      data-close-modal
+    >
+      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+        <use href="/assets/img/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+</div>

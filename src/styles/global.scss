@@ -40,3 +40,24 @@ body::before {
 .article {
   text-indent: 2em;
 }
+
+@font-face {
+  font-family: "JetBrainsMono-Regular";
+  src: url("https://www.mcenahle.org.cn/fonts/JetBrainsMono-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+code {
+  overflow-wrap: anywhere;
+  background-color: transparent;
+  font-size: 100%;
+  color: #333333;
+  font-family: "JetBrainsMono-Regular";
+}
+
+.usa-prose > p {
+  line-height: 1.5;
+  max-width: 100%;
+}
