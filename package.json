@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "pnpm run build:uswds && astro build",
-    "build:uswds": "gulp compile",
+    "build:uswds": "gulp copyAssets && gulp compile",
     "preview": "astro preview",
     "astro": "astro"
   },

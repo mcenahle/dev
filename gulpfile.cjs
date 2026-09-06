@@ -9,4 +9,5 @@ uswds.paths.dist.fonts = "./public/uswds/fonts";
 uswds.paths.dist.img = "./public/uswds/img";
 
 exports.init = uswds.init;
+exports.copyAssets = uswds.copyAssets;
 exports.compile = uswds.compile;
