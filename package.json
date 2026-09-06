@@ -15,6 +15,7 @@
   "dependencies": {
     "@astrojs/markdown-remark": "^7.3.0",
     "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/skill-icons": "^1.2.4",
     "@uswds/uswds": "3.14.0",
     "astro": "^7.3.1",
     "astro-icon": "^1.2.0",

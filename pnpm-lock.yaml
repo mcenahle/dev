@@ -14,6 +14,9 @@ importers:
       '@iconify-json/mdi':
         specifier: ^1.2.3
         version: 1.2.3
+      '@iconify-json/skill-icons':
+        specifier: ^1.2.4
+        version: 1.2.4
       '@uswds/uswds':
         specifier: 3.14.0
         version: 3.14.0
@@ -381,6 +384,9 @@ packages:
 
   '@iconify-json/mdi@1.2.3':
     resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
+
+  '@iconify-json/skill-icons@1.2.4':
+    resolution: {integrity: sha512-S6iRKHGlGCb/zfx3Isv1TBe5PunbDE5FEwJcaXji60+yRZMrcFFtYEI1xivKqaGKXyVZ508yjGDItsehQdJmSg==}
 
   '@iconify/tools@5.0.14':
     resolution: {integrity: sha512-wJ4ZE3/HZh2iBqLwG+8FOMHe7CMJAJqwSXZSpPwMdj1gZM3Z4t2hbQMVw4Vm45oQ985qn0g89PUIcDEdKTheBA==}
@@ -3140,6 +3146,10 @@ snapshots:
       is-negated-glob: 1.0.0
 
   '@iconify-json/mdi@1.2.3':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/skill-icons@1.2.4':
     dependencies:
       '@iconify/types': 2.0.0
 
