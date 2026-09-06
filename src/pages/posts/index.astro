@@ -13,9 +13,9 @@ import { Icon } from "astro-icon/components";
 ---
 
 <Layout>
-  <h2>站务文件</h2>
+  <h2>开发博客</h2>
 
-  <p class="usa-intro">mcenahle 站务文件</p>
+  <p class="usa-intro">mcenahle.dev 开发博客</p>
 
   <ul class="usa-collection">
     {
@@ -36,17 +36,11 @@ import { Icon } from "astro-icon/components";
               {post.frontmatter.description}
             </p>
 
-            <ul class="usa-collection__meta" aria-label="站务文件信息">
+            <ul class="usa-collection__meta" aria-label="文章信息">
               <li class="usa-collection__meta-item">
                 <Icon name="mdi:account-edit" />
                 &nbsp;
                 <span>{post.frontmatter.author}</span>
-              </li>
-
-              <li class="usa-collection__meta-item">
-                <Icon name="mdi:format-list-numbered" />
-                &nbsp;
-                <span>{post.frontmatter.no}</span>
               </li>
 
               <li class="usa-collection__meta-item">

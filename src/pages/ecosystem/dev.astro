@@ -1,0 +1,239 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout>
+  <h2><code>.mcenahle.dev</code> 网站生态</h2>
+
+  <div class="article">
+    <table class="usa-table">
+      <thead>
+        <tr style="background: #2b5bae; color: white;">
+          <th>网站名</th>
+          <th>GitHub 仓库</th>
+          <th>详情</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>mcenahle.dev</td>
+          <td
+            ><a
+              href="https://mcenahle.dev/gh/dev/"
+              target="_blank"
+              class="usa-link usa-link--external"
+              ><Icon name="mdi:github" /> <u>访问</u></a
+            ></td
+          >
+          <td>
+            <a
+              href="#example-modal-1"
+              class="usa-button"
+              aria-controls="example-modal-1"
+              data-open-modal><u>详情</u></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>game.mcenahle.dev</td>
+          <td
+            ><a
+              href="https://mcenahle.dev/gh/game-dev-site/"
+              target="_blank"
+              class="usa-link usa-link--external"
+              ><Icon name="mdi:github" /> <u>访问</u></a
+            ></td
+          >
+          <td>
+            <a
+              href="#example-modal-2"
+              class="usa-button"
+              aria-controls="example-modal-2"
+              data-open-modal><u>详情</u></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>blog.mcenahle.dev</td>
+          <td
+            ><a
+              href="https://mcenahle.dev/gh/mcenahle-blog-template/"
+              class="usa-link usa-link--external"
+              target="_blank"><Icon name="mdi:github" /> <u>访问</u></a
+            ></td
+          >
+          <td>
+            <a
+              href="#example-modal-3"
+              class="usa-button"
+              aria-controls="example-modal-3"
+              data-open-modal><u>详情</u></a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      2026年8月29日，开通 <code>https://mcenahle.dev/gh/repo/path/</code> 的短链接。访问
+      &nbsp;<code>https://mcenahle.dev/gh/repo/path/</code> 可被重定向到 <code
+        >https://github.com/mcenahle/repo/path/</code
+      >。
+    </p>
+  </div>
+
+  <div
+    class="usa-modal"
+    id="example-modal-1"
+    aria-labelledby="modal-1-heading"
+    aria-describedby="modal-1-description"
+  >
+    <div class="usa-modal__content">
+      <div class="usa-modal__main">
+        <h2 class="usa-modal__heading" id="modal-1-heading">
+          mcenahle.dev 开发
+        </h2>
+        <div class="usa-prose">
+          <p id="modal-1-description" style="text-indent: 2em;">
+            该网站的开发自从购买 <code>mcenahle.dev</code> 就已经开始，在购买之后及之后几日，基本使用
+            Astro 完成了开发，后被逐渐废弃，随后于2026年8月29日中午及下午完成了降级改版。改版后访问速度大幅提升，重回经典风格。
+          </p>
+        </div>
+        <div class="usa-modal__footer">
+          <ul class="usa-button-group">
+            <li class="usa-button-group__item">
+              <a class="usa-button" href="/"> 返回首页 </a>
+            </li>
+            <li class="usa-button-group__item">
+              <button
+                type="button"
+                class="usa-button usa-button--unstyled padding-105 text-center"
+                data-close-modal
+              >
+                关闭
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="usa-button usa-modal__close"
+        aria-label="Close this window"
+        data-close-modal
+      >
+        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+          <use href="/assets/img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div
+    class="usa-modal"
+    id="example-modal-2"
+    aria-labelledby="modal-2-heading"
+    aria-describedby="modal-2-description"
+  >
+    <div class="usa-modal__content">
+      <div class="usa-modal__main">
+        <h2 class="usa-modal__heading" id="modal-2-heading">
+          game.mcenahle.dev 开发
+        </h2>
+        <div class="usa-prose">
+          <p id="modal-2-description" style="text-indent: 2em;">
+            在接触 DDLC 游戏，并被“第四面墙”、“<span style="user-select:none"
+              >Sayo-nara</span
+            >”吓到后，准备自己开发一个自己的 Ren'py
+            游戏。目前该游戏项目被教资暂时搁置。
+          </p>
+        </div>
+        <div class="usa-modal__footer">
+          <ul class="usa-button-group">
+            <li class="usa-button-group__item">
+              <a
+                class="usa-button"
+                href="https://game.mcenahle.dev"
+                target="_blank"
+              >
+                访问 <Icon name="mdi:open-in-new" />
+              </a>
+            </li>
+            <li class="usa-button-group__item">
+              <button
+                type="button"
+                class="usa-button usa-button--unstyled padding-105 text-center"
+                data-close-modal
+              >
+                关闭
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="usa-button usa-modal__close"
+        aria-label="Close this window"
+        data-close-modal
+      >
+        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+          <use href="/assets/img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div
+    class="usa-modal"
+    id="example-modal-3"
+    aria-labelledby="modal-3-heading"
+    aria-describedby="modal-3-description"
+  >
+    <div class="usa-modal__content">
+      <div class="usa-modal__main">
+        <h2 class="usa-modal__heading" id="modal-3-heading">
+          blog.mcenahle.dev 开发
+        </h2>
+        <div class="usa-prose">
+          <p id="modal-3-description" style="text-indent: 2em;">
+            为了让个人博客网站具备个人性质，使用 Astro + Bootstrap 3
+            搭建了一个个人博客 demo 网站。该网站目前已经陆续集成了众多使用功能。
+          </p>
+        </div>
+        <div class="usa-modal__footer">
+          <ul class="usa-button-group">
+            <li class="usa-button-group__item">
+              <a
+                class="usa-button"
+                href="https://blog.mcenahle.dev"
+                target="_blank"
+              >
+                访问 <Icon name="mdi:open-in-new" />
+              </a>
+            </li>
+            <li class="usa-button-group__item">
+              <button
+                type="button"
+                class="usa-button usa-button--unstyled padding-105 text-center"
+                data-close-modal
+              >
+                关闭
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="usa-button usa-modal__close"
+        aria-label="Close this window"
+        data-close-modal
+      >
+        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+          <use href="/assets/img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</Layout>

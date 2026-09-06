@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+const { frontmatter } = Astro.props;
+---
+
+<meta charset="utf-8" />
+<Layout>
+  <nav
+    class="usa-breadcrumb"
+    aria-label="Breadcrumbs,,"
+    style="background-color: transparent;"
+  >
+    <ol class="usa-breadcrumb__list">
+      <li class="usa-breadcrumb__list-item">
+        <a href="/" class="usa-breadcrumb__link usa-link"><span>主页</span></a>
+      </li>
+      <li class="usa-breadcrumb__list-item">
+        <a href="/posts/" class="usa-breadcrumb__link usa-link"
+          ><span>开发博客</span></a
+        >
+      </li>
+      <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+        <span>{frontmatter.title}</span>
+      </li>
+    </ol>
+  </nav>
+
+  <h2 style="text-align: center; font-size: 30px;">{frontmatter.title}</h2>
+
+  <div class="title-divider">
+    <span></span>
+  </div>
+
+  <div class="post-meta">
+    <span>
+      <Icon name="mdi:account-edit" />
+      {frontmatter.author}
+    </span>
+
+    <span>
+      <Icon name="mdi:calendar" />
+      {frontmatter.pubDate}
+    </span>
+  </div>
+
+  <div class="posts" style="text-indent: 2em; margin-top: 10px;">
+    <slot />
+  </div>
+  <hr style="margin-top: 24px;" />
+  <a href="/" class="usa-button usa-button--outline"
+    ><Icon name="mdi:arrow-left" /> 返回首页</a
+  >
+  <button id="ask-gpt" type="button" class="usa-button"
+    ><Icon name="bi:openai" /> 询问 ChatGPT</button
+  >
+
+  <script>
+    document.querySelector("#ask-gpt")?.addEventListener("click", () => {
+      const pageUrl = window.location.href;
+      const prompt = `阅读 ${pageUrl}，然后回答这个问题：`;
+      const url = `https://chatgpt.com/?prompt=${encodeURIComponent(prompt)}`;
+
+      window.open(url, "_blank");
+    });
+  </script>
+</Layout>
