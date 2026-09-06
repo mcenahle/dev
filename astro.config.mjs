@@ -5,7 +5,7 @@ import rehypeExternalLinks from "rehype-external-links";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://usdws.mcenahle.dev",
+  site: "https://mcenahle.dev",
   trailingSlash: "always",
   prefetch: true,
   devToolbar: {
