@@ -77,18 +77,29 @@ const { frontmatter } = Astro.props;
     </li>
   </ul> -->
 
-  <a href="/" class="usa-button usa-button--outline"
-    ><Icon name="mdi:arrow-left" /> 返回首页</a
-  >
-  <a
-    class="usa-button"
-    href="#example-modal-1"
-    aria-controls="example-modal-1"
-    data-open-modal><Icon name="mdi:timer-outline" /> 查看目前执行状态</a
-  >
-  <button id="ask-gpt" type="button" class="usa-button usa-button--accent-cool"
-    ><Icon name="bi:openai" /> 询问 ChatGPT</button
-  >
+  <ul class="usa-button-group">
+    <li class="usa-button-group__item">
+      <a href="/" class="usa-button usa-button--outline"
+        ><Icon name="mdi:arrow-left" /> 返回首页</a
+      >
+    </li>
+    <li class="usa-button-group__item">
+      <a
+        class="usa-button"
+        href="#example-modal-1"
+        aria-controls="example-modal-1"
+        data-open-modal><Icon name="mdi:timer-outline" /> 查看目前执行状态</a
+      >
+    </li>
+    <li class="usa-button-group__item">
+      <button
+        id="ask-gpt"
+        type="button"
+        class="usa-button usa-button--accent-cool"
+        ><Icon name="bi:openai" /> 询问 ChatGPT</button
+      >
+    </li>
+  </ul>
 
   <div
     class="usa-modal"

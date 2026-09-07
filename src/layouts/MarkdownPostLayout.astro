@@ -48,12 +48,19 @@ const { frontmatter } = Astro.props;
     <slot />
   </div>
   <hr style="margin-top: 24px;" />
-  <a href="/" class="usa-button usa-button--outline"
-    ><Icon name="mdi:arrow-left" /> 返回首页</a
-  >
-  <button id="ask-gpt" type="button" class="usa-button"
-    ><Icon name="bi:openai" /> 询问 ChatGPT</button
-  >
+
+  <ul class="usa-button-group">
+    <li class="usa-button-group__item">
+      <a href="/" class="usa-button usa-button--outline"
+        ><Icon name="mdi:arrow-left" /> 返回首页</a
+      >
+    </li>
+    <li class="usa-button-group__item">
+      <button id="ask-gpt" type="button" class="usa-button"
+        ><Icon name="bi:openai" /> 询问 ChatGPT</button
+      >
+    </li>
+  </ul>
 
   <script>
     document.querySelector("#ask-gpt")?.addEventListener("click", () => {
