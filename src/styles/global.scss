@@ -58,7 +58,9 @@ body::before {
   h6,
   .post-meta,
   .usa-breadcrumb,
-  .usa-button {
+  .usa-button,
+  ol,
+  .usa-alert__text {
     text-indent: 0em;
   }
 }
