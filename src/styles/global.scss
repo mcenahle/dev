@@ -95,12 +95,12 @@ $usa-link-hover-focus: #193d71;
 
 .usa-link {
   color: $usa-link-original !important;
+  &:visited {
+    color: $usa-link-original !important;
+  }
   &:hover,
   &:focus {
     color: $usa-link-hover-focus !important;
-  }
-  &:visited {
-    color: $usa-link-original !important;
   }
 }
 
