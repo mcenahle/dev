@@ -61,7 +61,8 @@ body::before {
   .usa-button,
   ol,
   .usa-alert__text,
-  .usa-button-group {
+  .usa-button-group,
+  .no-text-indent {
     text-indent: 0em;
   }
 }
