@@ -6,7 +6,80 @@ const { frontmatter } = Astro.props;
 
 <meta charset="utf-8" />
 <Layout>
-  <nav
+  <div class="usa-section" style="padding-top: 2rem; padding-bottom: 0rem;">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div
+          class="usa-layout-docs__sidenav display-none desktop:display-block desktop:grid-col-3"
+        >
+          <nav aria-label="Secondary navigation">
+            <ul class="usa-sidenav" style="text-indent: 0em;">
+              <li class="usa-sidenav__item">
+                <a href="/">主页</a>
+              </li>
+              <li class="usa-sidenav__item">
+                <a href="/posts/" class="usa-current">开发博客</a>
+                <ul class="usa-sidenav__sublist">
+                  <li class="usa-sidenav__item">
+                    <a href="javascript:void(0);" class="usa-current"
+                      >{frontmatter.title}</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <main class="desktop:grid-col-9 usa-prose" id="main-content">
+          <h2 style="text-align: center; font-size: 30px;">
+            {frontmatter.title}
+          </h2>
+
+          <div class="title-divider">
+            <span></span>
+          </div>
+
+          <div class="post-meta">
+            <span>
+              <Icon name="mdi:account-edit" />
+              {frontmatter.author}
+            </span>
+
+            <span>
+              <Icon name="mdi:calendar" />
+              {frontmatter.pubDate}
+            </span>
+            <div
+              class="usa-prose posts"
+              style="text-indent: 2em; margin-top: 10px;"
+            >
+              <slot />
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="usa-layout-docs__sidenav desktop:display-none">
+        <nav aria-label="Secondary navigation">
+          <ul class="usa-sidenav" style="text-indent: 0em;">
+            <li class="usa-sidenav__item">
+              <a href="/">主页</a>
+            </li>
+            <li class="usa-sidenav__item">
+              <a href="/posts/" class="usa-current">开发博客</a>
+              <ul class="usa-sidenav__sublist">
+                <li class="usa-sidenav__item">
+                  <a href="javascript:void(0);" class="usa-current"
+                    >{frontmatter.title}</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- <nav
     class="usa-breadcrumb"
     aria-label="Breadcrumbs,,"
     style="background-color: transparent;"
@@ -46,7 +119,7 @@ const { frontmatter } = Astro.props;
 
   <div class="posts" style="text-indent: 2em; margin-top: 10px;">
     <slot />
-  </div>
+  </div> -->
   <hr style="margin-top: 24px;" />
 
   <ul class="usa-button-group">
