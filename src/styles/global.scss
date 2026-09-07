@@ -50,21 +50,6 @@ a {
   a {
     text-decoration: none;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .post-meta,
-  .usa-breadcrumb,
-  .usa-button,
-  ol,
-  .usa-alert__text,
-  .usa-button-group,
-  .no-text-indent {
-    text-indent: 0em;
-  }
 }
 
 .posts {
@@ -73,10 +58,20 @@ a {
     text-decoration: underline;
   }
   ul,
-  ol,
-  h3 {
+  ol {
     text-indent: 0em;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-meta,
+.usa-button-group {
+  text-indent: 0em;
 }
 
 .external-link::after {

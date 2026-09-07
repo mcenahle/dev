@@ -27,22 +27,20 @@ import "../styles/global.scss";
 
       <main class="site-main">
         <div class="grid-container">
-          <div class="article">
-            <slot />
-          </div>
+          <slot />
         </div>
       </main>
-
-      <Footer />
     </div>
 
-    <script>
-      declare const hljs: {
-        highlightAll(): void;
-      };
-
-      hljs.highlightAll();
-    </script>
+    <Footer />
   </body>
-  <script is:inline src="/uswds/js/uswds.min.js"></script>
+
+  <script>
+    declare const hljs: {
+      highlightAll(): void;
+    };
+
+    hljs.highlightAll();
+  </script>
 </html>
+<script is:inline src="/uswds/js/uswds.min.js"></script>

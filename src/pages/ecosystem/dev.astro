@@ -73,13 +73,15 @@ import { Icon } from "astro-icon/components";
       </tr>
     </tbody>
   </table>
-  <p>
-    2026年8月29日，开通<code>https://mcenahle.dev/gh/repo/path/</code
-    >的短链接。访问
-    <code>https://mcenahle.dev/gh/repo/path/</code>可被重定向到 <code
-      >https://github.com/mcenahle/repo/path/</code
-    >。
-  </p>
+  <div class="article">
+    <p>
+      2026年8月29日，开通<code>https://mcenahle.dev/gh/repo/path/</code
+      >的短链接。访问
+      <code>https://mcenahle.dev/gh/repo/path/</code>可被重定向到 <code
+        >https://github.com/mcenahle/repo/path/</code
+      >。
+    </p>
+  </div>
 </Layout>
 
 <div
@@ -92,7 +94,7 @@ import { Icon } from "astro-icon/components";
     <div class="usa-modal__main">
       <h2 class="usa-modal__heading" id="modal-1-heading">mcenahle.dev 开发</h2>
       <div class="usa-prose">
-        <p id="modal-1-description" style="text-indent: 2em;">
+        <p id="modal-1-description" class="dev-ecosystem">
           该网站的开发自从购买<code>mcenahle.dev</code
           >就已经开始，在购买之后及之后几日，基本使用 Astro
           完成了开发，后被逐渐废弃，随后于2026年8月29日中午及下午完成了降级改版。改版后访问速度大幅提升，重回经典风格。
@@ -140,7 +142,7 @@ import { Icon } from "astro-icon/components";
         game.mcenahle.dev 开发
       </h2>
       <div class="usa-prose">
-        <p id="modal-2-description" style="text-indent: 2em;">
+        <p id="modal-2-description" class="dev-ecosystem">
           在接触 DDLC 游戏，并被“第四面墙”、“<span style="user-select:none"
             >Sayo-nara</span
           >”吓到后，准备自己开发一个自己的 Ren'py
@@ -195,7 +197,7 @@ import { Icon } from "astro-icon/components";
         blog.mcenahle.dev 开发
       </h2>
       <div class="usa-prose">
-        <p id="modal-3-description" style="text-indent: 2em;">
+        <p id="modal-3-description" class="dev-ecosystem">
           为了让个人博客网站具备个人性质，使用 Astro + Bootstrap 3
           搭建了一个个人博客 demo 网站。该网站目前已经陆续集成了众多使用功能。
         </p>
