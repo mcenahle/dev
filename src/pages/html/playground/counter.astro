@@ -1,0 +1,26 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout>
+  <h1>计数器</h1>
+  <button id="counter" class="usa-button" class="btn btn-primary">0</button>
+  <p>源代码：</p>
+  <pre><code class="language-javascript no-text-indent">// counter.js
+const button = document.querySelector("#counter");
+if (button != null) &#123;
+    button.addEventListener("click", function () &#123;
+        button.textContent = String(Number(button.textContent) + 1);
+    &#125;);
+&#125;
+</code></pre>
+  <script>
+    const button = document.querySelector("#counter");
+    if (button != null) {
+      button.addEventListener("click", function () {
+        button.textContent = String(Number(button.textContent) + 1);
+      });
+    }
+  </script>
+</Layout>
