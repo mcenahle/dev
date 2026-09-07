@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>判断年龄</title>
+  </head>
+
+  <body>
+    <h2>获得 dev 前最后一难 - 判断年龄</h2>
+    <label for="age">年龄：</label>
+    <input
+      type="text"
+      id="age"
+      name="age"
+      placeholder="年龄"
+      required
+      minlength="1"
+      maxlength="2"
+    />
+    <button id="verifyBtn" onclick="verify()">确定</button>
+    <p id="result"></p>
+  </body>
+
+  <script>
+    function verify() {
+      const userAge = document.querySelector("#age").value;
+      if (userAge < 18) {
+        document.querySelector("#result").innerHTML = "还未成年哦";
+      } else {
+        document.querySelector("#result").innerHTML = "成年啦！";
+      }
+    }
+  </script>
+</html>
