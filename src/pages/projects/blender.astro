@@ -33,58 +33,54 @@ const works = [
 <Layout>
   <h1>Blender 建模作品展示</h1>
 
-  <div class="article">
-    <p class="usa-intro">
-      Blender 建模学习过程中制作的一些练习作品与实验项目。
-    </p>
+  <p class="usa-intro">Blender 建模学习过程中制作的一些练习作品与实验项目。</p>
 
-    <div class="grid-row grid-gap">
-      {
-        works.map((work) => (
-          <div class="tablet:grid-col-6 margin-bottom-1">
-            <div class="usa-card">
-              <div class="usa-card__container">
-                <div class="usa-card__header">
-                  <h2 class="usa-card__heading" style="text-indent: 0em;">
-                    {work.title}
-                  </h2>
-                </div>
+  <div class="grid-row grid-gap">
+    {
+      works.map((work) => (
+        <div class="tablet:grid-col-6 margin-bottom-1">
+          <div class="usa-card">
+            <div class="usa-card__container">
+              <div class="usa-card__header">
+                <h2 class="usa-card__heading" style="text-indent: 0em;">
+                  {work.title}
+                </h2>
+              </div>
 
-                <div class="usa-card__media">
-                  <div class="usa-card__img">
-                    <img
-                      src={work.image}
-                      alt={`${work.title} Blender 建模作品`}
-                      loading="lazy"
-                    />
-                  </div>
+              <div class="usa-card__media">
+                <div class="usa-card__img">
+                  <img
+                    src={work.image}
+                    alt={`${work.title} Blender 建模作品`}
+                    loading="lazy"
+                  />
                 </div>
+              </div>
 
-                <div class="usa-card__body">
-                  <p style="text-indent: 0em;">{work.description}</p>
-                </div>
+              <div class="usa-card__body">
+                <p style="text-indent: 0em;">{work.description}</p>
               </div>
             </div>
           </div>
-        ))
-      }
-    </div>
-
-    <section class="margin-top-1">
-      <h2 style="text-indent: 0em;">关于这些作品</h2>
-
-      <p>
-        个人认为，Blender 是一款很好用的开源软件，其使用 C++
-        编写，并将源代码进行公开。这种行为能充分地让设计师体会到其优势，
-        也能放心地投入到创作的热情之中。
-      </p>
-
-      <p>目前，我正在跟随教程学习 Blender，并做出了这些作品。</p>
-
-      <p>
-        未来，我将使用 Blender 制作网站宣传图，并将其应用于个人创作等诸多领域，
-        实现“一处学习，处处使用”。
-      </p>
-    </section>
+        </div>
+      ))
+    }
   </div>
+
+  <section class="margin-top-1">
+    <h2 style="text-indent: 0em;">关于这些作品</h2>
+
+    <p>
+      个人认为，Blender 是一款很好用的开源软件，其使用 C++
+      编写，并将源代码进行公开。这种行为能充分地让设计师体会到其优势，
+      也能放心地投入到创作的热情之中。
+    </p>
+
+    <p>目前，我正在跟随教程学习 Blender，并做出了这些作品。</p>
+
+    <p>
+      未来，我将使用 Blender 制作网站宣传图，并将其应用于个人创作等诸多领域，
+      实现“一处学习，处处使用”。
+    </p>
+  </section>
 </Layout>
