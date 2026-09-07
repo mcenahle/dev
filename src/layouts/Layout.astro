@@ -16,6 +16,9 @@ import "../styles/global.scss";
     <meta name="generator" content={Astro.generator} />
     <title>mcenahle.dev</title>
     <link rel="stylesheet" href="/uswds/css/styles.css" />
+
+    <link rel="stylesheet" href="/highlightjs/styles/tokyo-night-dark.css" />
+    <script is:inline src="/highlightjs/highlight.min.js"></script>
   </head>
   <body>
     <div class="site-wrapper">
@@ -32,6 +35,14 @@ import "../styles/global.scss";
 
       <Footer />
     </div>
+
+    <script>
+      declare const hljs: {
+        highlightAll(): void;
+      };
+
+      hljs.highlightAll();
+    </script>
   </body>
   <script is:inline src="/uswds/js/uswds.min.js"></script>
 </html>
