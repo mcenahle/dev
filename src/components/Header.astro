@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import ThemeIcon from "../components/ThemeIcon.astro";
 ---
 
 <div class="usa-overlay"></div>
@@ -105,6 +106,11 @@ import { Icon } from "astro-icon/components";
             >
               <Icon name="mdi:edit" /> 查看源代码
             </a>
+          </li>
+          <li class="usa-nav__secondary-links">
+            <div class="theme-change">
+              <ThemeIcon />
+            </div>
           </li>
         </ul>
       </div>

@@ -94,13 +94,13 @@ $usa-link-original: #3b6fb8;
 $usa-link-hover-focus: #193d71;
 
 .usa-link {
-  color: $usa-link-original !important;
+  color: $usa-link-original;
   &:visited {
-    color: $usa-link-original !important;
+    color: $usa-link-original;
   }
   &:hover,
   &:focus {
-    color: $usa-link-hover-focus !important;
+    color: $usa-link-hover-focus;
   }
 }
 
@@ -184,16 +184,16 @@ code {
   border-radius: 4px;
 
   a {
-    color: $usa-link-original !important;
+    color: $usa-link-original;
     text-decoration: underline;
 
     &:visited {
-      color: $usa-link-original !important;
+      color: $usa-link-original;
     }
 
     &:hover,
     &:active {
-      color: $usa-link-hover-focus !important;
+      color: $usa-link-hover-focus;
     }
   }
 }
@@ -228,4 +228,47 @@ blockquote {
 
 .usa-nav__link[aria-expanded="false"] + .usa-nav__submenu {
   display: none;
+}
+
+.theme-change {
+  display: flex;
+  justify-content: space-between;
+}
+
+$dark-background: #717171;
+
+.dark .usa-header {
+  background-color: $dark-background;
+  color: #fff;
+}
+
+.dark .usa-logo a,
+.dark .usa-nav__primary button[aria-expanded="false"] span::after,
+.dark .usa-nav__primary-item,
+.dark .usa-nav__primary-item > a,
+.dark .usa-nav__primary-item > button,
+.dark .usa-nav__secondary-item > a,
+.dark .grid-container a,
+.dark .grid-container a:visited {
+  color: #fff !important;
+}
+
+.dark .usa-sidenav__item > a {
+  color: #fff !important;
+}
+
+.dark .usa-sidenav__item > a.usa-current {
+  color: #005ea2 !important;
+}
+
+.dark .site-main,
+.dark .post-meta {
+  background-color: $dark-background;
+  color: #fff;
+  p,
+  code,
+  li,
+  ul {
+    color: #fff;
+  }
 }
