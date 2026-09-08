@@ -3,7 +3,7 @@ import { Icon } from "astro-icon/components";
 ---
 
 <footer class="usa-footer">
-  <div class="usa-footer__primary-section">
+  <!-- <div class="usa-footer__primary-section">
     <nav class="usa-footer__nav" aria-label="Footer navigation">
       <ul class="grid-row grid-gap">
         <li
@@ -93,5 +93,111 @@ import { Icon } from "astro-icon/components";
         </div>
       </div>
     </div>
+  </div> -->
+
+  <div class="usa-identifier">
+    <section
+      class="usa-identifier__section usa-identifier__section--masthead"
+      aria-label="Agency identifier"
+    >
+      <div class="usa-identifier__container">
+        <div class="usa-identifier__logos">
+          <a href="/" class="usa-identifier__logo"
+            ><img
+              class="usa-identifier__logo-img"
+              src="/favicon.ico"
+              alt="mcenahle.dev logo"
+              role="img"
+            /></a
+          >
+        </div>
+        <section
+          class="usa-identifier__identity"
+          aria-label="Agency description"
+        >
+          <p class="usa-identifier__identity-domain">mcenahle.dev</p>
+          <p class="usa-identifier__identity-disclaimer">
+            <span aria-hidden="true">An </span>official website of the mcenahle
+            development website.
+          </p>
+        </section>
+      </div>
+    </section>
+    <nav
+      class="usa-identifier__section usa-identifier__section--required-links"
+      aria-label="Important links"
+    >
+      <div class="usa-identifier__container">
+        <ul class="usa-identifier__required-links-list">
+          <li class="usa-identifier__required-links-item">
+            <a href="/my/" class="usa-identifier__required-link usa-link"
+              >关于 mcenahle</a
+            >
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a
+              href="/site-affairs-documents/"
+              class="usa-identifier__required-link usa-link">站务文件</a
+            >
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="/posts/" class="usa-identifier__required-link usa-link"
+              >开发博客</a
+            >
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a
+              href="/posts/20260907/"
+              class="usa-identifier__required-link usa-link"
+              >改版前的 dev 网站</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="usa-identifier__container">
+        <ul class="usa-identifier__required-links-list">
+          <li class="usa-identifier__required-links-item">
+            <a
+              href="https://developer.mozilla.org/zh-CN/"
+              target="_blank"
+              class="usa-identifier__required-link usa-link usa-link--external"
+              >mozilla 开发者</a
+            >
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a
+              href="https://linux.do"
+              target="_blank"
+              class="usa-identifier__required-link usa-link usa-link--external"
+              >Linux.do</a
+            >
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a
+              href="https://mail.mcenahle.dev"
+              target="_blank"
+              class="usa-identifier__required-link usa-link usa-link--external"
+              >webmail</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section
+      class="usa-identifier__section usa-identifier__section--usagov"
+      aria-label="U.S. government information and services"
+    >
+      <div class="usa-identifier__container">
+        <p>居住地：上海市崇明区/浦东新区</p>
+        <div class="usa-identifier__usagov-description">
+          <Icon name="mdi:github" />&nbsp;Looking for my GitHub profile?
+        </div>
+        &nbsp;<a
+          href="https://github.com/mcenahle/"
+          target="_blank"
+          class="usa-link usa-link--external">Visit github.com</a
+        >
+      </div>
+    </section>
   </div>
 </footer>
