@@ -225,3 +225,7 @@ blockquote {
 .usa-identifier__section {
   padding-bottom: 0rem;
 }
+
+.usa-nav__link[aria-expanded="false"] + .usa-nav__submenu {
+  display: none;
+}
