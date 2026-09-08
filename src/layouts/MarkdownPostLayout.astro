@@ -79,47 +79,6 @@ const { frontmatter } = Astro.props;
       </div>
     </div>
   </div>
-  <!-- <nav
-    class="usa-breadcrumb"
-    aria-label="Breadcrumbs,,"
-    style="background-color: transparent;"
-  >
-    <ol class="usa-breadcrumb__list">
-      <li class="usa-breadcrumb__list-item">
-        <a href="/" class="usa-breadcrumb__link usa-link"><span>主页</span></a>
-      </li>
-      <li class="usa-breadcrumb__list-item">
-        <a href="/posts/" class="usa-breadcrumb__link usa-link"
-          ><span>开发博客</span></a
-        >
-      </li>
-      <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
-        <span>{frontmatter.title}</span>
-      </li>
-    </ol>
-  </nav>
-
-  <h2 style="text-align: center; font-size: 30px;">{frontmatter.title}</h2>
-
-  <div class="title-divider">
-    <span></span>
-  </div>
-
-  <div class="post-meta">
-    <span>
-      <Icon name="mdi:account-edit" />
-      {frontmatter.author}
-    </span>
-
-    <span>
-      <Icon name="mdi:calendar" />
-      {frontmatter.pubDate}
-    </span>
-  </div>
-
-  <div class="posts" style="text-indent: 2em; margin-top: 10px;">
-    <slot />
-  </div> -->
   <hr style="margin-top: 24px;" />
 
   <ul class="usa-button-group">
@@ -145,3 +104,9 @@ const { frontmatter } = Astro.props;
     });
   </script>
 </Layout>
+
+<style is:global>
+  .posts > .usa-table {
+    font-family: "MN Source Han Serif SC", serif;
+  }
+</style>
