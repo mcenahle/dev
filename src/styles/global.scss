@@ -112,6 +112,34 @@ $usa-link-hover-focus: #193d71;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Times New Roman";
+  src: url("/fonts/times-new-roman/times.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("/fonts/times-new-roman/timesi.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("/fonts/times-new-roman/timesi.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("/fonts/times-new-roman/timesbi.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
 code {
   overflow-wrap: anywhere;
   background-color: transparent;
