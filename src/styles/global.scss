@@ -230,6 +230,14 @@ blockquote {
   display: none;
 }
 
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
 .theme-change {
   display: flex;
   justify-content: space-between;
