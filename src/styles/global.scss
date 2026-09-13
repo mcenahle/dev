@@ -258,6 +258,12 @@ blockquote {
   display: none;
 }
 
+.usa-prose > table tfoot td,
+.usa-prose > table th,
+.usa-prose > table thead td {
+  font-weight: 700;
+}
+
 .positive {
   color: green;
 }
