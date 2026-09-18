@@ -49,10 +49,7 @@ const { frontmatter } = Astro.props;
               <Icon name="mdi:calendar" />
               {frontmatter.pubDate}
             </span>
-            <div
-              class="usa-prose posts"
-              style="margin-top: 10px; font-family: 'MN Source Han Serif SC', serif;"
-            >
+            <div class="usa-prose posts" style="margin-top: 10px;">
               <slot />
             </div>
           </div>
@@ -104,9 +101,3 @@ const { frontmatter } = Astro.props;
     });
   </script>
 </Layout>
-
-<style is:global>
-  .posts > .usa-table {
-    font-family: "MN Source Han Serif SC", serif;
-  }
-</style>

@@ -224,6 +224,21 @@ code {
       color: $usa-link-hover-focus;
     }
   }
+
+  font-family: "MN Source Han Serif SC", serif !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "MN Source Han Serif SC", serif !important;
+  }
+
+  .usa-table {
+    font-family: "MN Source Han Serif SC", serif !important;
+  }
 }
 
 .usa-collection__item,
