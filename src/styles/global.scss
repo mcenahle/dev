@@ -214,6 +214,7 @@ code {
   a {
     color: $usa-link-original;
     text-decoration: underline;
+    word-break: break-all;
 
     &:visited {
       color: $usa-link-original;
