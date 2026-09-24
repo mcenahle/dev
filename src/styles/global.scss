@@ -241,6 +241,10 @@ code {
   }
 }
 
+.posts > p:has(img) {
+  text-indent: 0em;
+}
+
 .usa-collection__item,
 .usa-prose .usa-collection__item {
   max-width: 100%;
