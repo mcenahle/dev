@@ -6,44 +6,74 @@ import { Icon } from "astro-icon/components";
 <Layout>
   <h1>签名</h1>
 
-  <p>Algorithm: ssh-ed25519</p>
+  <p>密钥算法：ssh-ed25519</p>
   <p>
-    Fingerprint: <code>SHA256:4LlkGj+uV8LjbOYgvmWoGna8dUtnSepaClrVkjEZWfU</code>
+    SHA-256 指纹：<code>4LlkGj+uV8LjbOYgvmWoGna8dUtnSepaClrVkjEZWfU</code>
   </p>
   <p>
-    Public key: <code
-      >AAAAC3NzaC1lZDI1NTE5AAAAIEECFxVltE4iYpyD0nGM0Bz4mrJgnC5J7At2Hnoz/tk2</code
-    >
+    公钥数据：
+    <code>
+      AAAAC3NzaC1lZDI1NTE5AAAAIEECFxVltE4iYpyD0nGM0Bz4mrJgnC5J7At2Hnoz/tk2
+    </code>
+  </p>
+  <p>SSH Key 私钥：</p>
+
+  <p>
+    <code>-----BEGIN OPENSSH PRIVATE KEY-----</code>
+  </p>
+
+  <p>
+    <code>You cannot read it, BECAUSE I KNOW WHAT YOU WANT.</code>
   </p>
   <p>
-    Comment: <a href="mailto:hi@mcenahle.page" target="_blank" class="usa-link"
-      ><u>hi@mcenahle.page</u> <Icon name="mdi:open-in-new" /></a
-    > | <a href="mailto:code@mcenahle.dev" target="_blank" class="usa-link"
-      ><u>code@mcenahle.dev</u> <Icon name="mdi:open-in-new" /></a
-    > | <a href="mailto:hi@mcenahle.care" target="_blank" class="usa-link"
-      ><u>hi@mcenahle.care</u> <Icon name="mdi:open-in-new" /></a
-    > | <a
-      href="mailto:webmaster@mcenahle.edu.pl"
-      target="_blank"
-      class="usa-link"
-      ><u>webmaster@mcenahle.edu.pl</u> <Icon name="mdi:open-in-new" /></a
-    >
+    <code>LOL :)</code>
+  </p>
+
+  <p>
+    <code>-----END OPENSSH PRIVATE KEY-----</code>
+  </p>
+
+  <p>
+    Randomart image:{" "}
+    <a href="/randomart-image.txt" target="_blank" class="usa-link">
+      <u>点此查看</u>
+    </a>
+  </p>
+
+  <p>
+    Comment:{" "}
+    <a href="mailto:hi@mcenahle.page" target="_blank" class="usa-link">
+      <u>hi@mcenahle.page</u> <Icon name="mdi:open-in-new" />
+    </a>{" "}
+    |{" "}
+    <a href="mailto:code@mcenahle.dev" target="_blank" class="usa-link">
+      <u>code@mcenahle.dev</u> <Icon name="mdi:open-in-new" />
+    </a>{" "}
+    |{" "}
+    <a href="mailto:hi@mcenahle.care" target="_blank" class="usa-link">
+      <u>hi@mcenahle.care</u> <Icon name="mdi:open-in-new" />
+    </a>{" "}
+    |{" "}
+    <a href="mailto:webmaster@mcenahle.edu.pl" target="_blank" class="usa-link">
+      <u>webmaster@mcenahle.edu.pl</u> <Icon name="mdi:open-in-new" />
+    </a>
   </p>
 
   <div class="usa-alert usa-alert--error" role="alert">
     <div class="usa-alert__body">
       <h4 class="usa-alert__heading">拒收对应电子邮件</h4>
       <p class="usa-alert__text">
-        除 <a href="mailto:hi@mcenahle.page" target="_blank" class="usa-link"
-          ><u>hi@mcenahle.page</u> <Icon name="mdi:open-in-new" /></a
-        > 之外，拒收所有自然人的电子邮件。如有骚扰的，列入全局（包含 <code
-          >hi@mcenahle.page</code
-        >）黑名单。
+        除{" "}
+        <a href="mailto:hi@mcenahle.page" target="_blank" class="usa-link">
+          <u>hi@mcenahle.page</u> <Icon name="mdi:open-in-new" />
+        </a>{" "}
+        之外，拒收所有自然人的电子邮件。如有骚扰的，列入全局（包含{" "}
+        <code>hi@mcenahle.page</code>）黑名单。
       </p>
     </div>
   </div>
 
-  <p style="text-align:right">Last updated: Oct 15, 2026.</p>
+  <p style="text-align:right">Last updated: Nov 18, 2026.</p>
 </Layout>
 
 <style>
